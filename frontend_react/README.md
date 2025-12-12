@@ -1,82 +1,51 @@
-# Lightweight React Template for KAVIA
+# Tic Tac Toe – React Frontend
 
-This project provides a minimal React template with a clean, modern UI and minimal dependencies.
+## Overview
+A simple browser-based Tic Tac Toe with a 3×3 grid for two players. Players take turns placing X and O, with automatic win/draw detection and a quick way to reset. The UI follows a clean, modern light theme.
 
 ## Features
+- Playable 3×3 grid with two-player turns
+- Current player indicator
+- Win and draw detection
+- Reset game button
 
-- **Lightweight**: No heavy UI frameworks - uses only vanilla CSS and React
-- **Modern UI**: Clean, responsive design with KAVIA brand styling
-- **Fast**: Minimal dependencies for quick loading times
-- **Simple**: Easy to understand and modify
+## Tech Stack
+- React (web)
+- Single frontend container
+- Preview on port 3000
 
 ## Getting Started
+Previews are started by the user. To run locally:
+1. Install dependencies: npm install
+2. Start preview: npm start
+3. Open http://localhost:3000
 
-In the project directory, you can run:
+## Usage
+- Click a square to place X or O.
+- Turns alternate automatically.
+- Use “Reset” to start a new game.
 
-### `npm start`
+## Project Structure
+- src/
+  - components/ – UI pieces (board, square, status)
+  - hooks/ – game state and helpers
+  - utils/ – winner/draw logic and helpers
 
-Runs the app in development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Environment Variables (optional)
+The app runs fine without any variables. If needed, you can set:
+- REACT_APP_API_BASE
+- REACT_APP_BACKEND_URL
+- REACT_APP_FRONTEND_URL
+- REACT_APP_WS_URL
+- REACT_APP_NODE_ENV
+- REACT_APP_NEXT_TELEMETRY_DISABLED
+- REACT_APP_ENABLE_SOURCE_MAPS
+- REACT_APP_PORT
+- REACT_APP_TRUST_PROXY
+- REACT_APP_LOG_LEVEL
+- REACT_APP_HEALTHCHECK_PATH
+- REACT_APP_FEATURE_FLAGS
+- REACT_APP_EXPERIMENTS_ENABLED
 
-### `npm test`
-
-Launches the test runner in interactive watch mode.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-## Customization
-
-### Colors
-
-The main brand colors are defined as CSS variables in `src/App.css`:
-
-```css
-:root {
-  --kavia-orange: #E87A41;
-  --kavia-dark: #1A1A1A;
-  --text-color: #ffffff;
-  --text-secondary: rgba(255, 255, 255, 0.7);
-  --border-color: rgba(255, 255, 255, 0.1);
-}
-```
-
-### Components
-
-This template uses pure HTML/CSS components instead of a UI framework. You can find component styles in `src/App.css`. 
-
-Common components include:
-- Buttons (`.btn`, `.btn-large`)
-- Container (`.container`)
-- Navigation (`.navbar`)
-- Typography (`.title`, `.subtitle`, `.description`)
-
-## Learn More
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Contributing
+PRs welcome! Future ideas: AI opponent, score tracking, animations.
